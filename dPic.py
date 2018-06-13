@@ -14,6 +14,7 @@ ax = plt.subplot(111)
 x = np.linspace(0, 1, 100)
 ax.plot()
 ax.plot(x, -x * np.log2(x))
+ax.plot(x, -x * np.log2(x) - (1-x) * np.log2(1-x))
 
 # 设置主刻度标签的位置,标签文本的格式
 ax.xaxis.set_major_locator(x_major_Locator)
